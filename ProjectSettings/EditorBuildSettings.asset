@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Christmas.unity
     guid: c2a285797d6ca7d4f87bec3296235791
+  - enabled: 0
+    path: Assets/Scenes/Test-NoAR.unity
+    guid: 5400d62b41b59624a8cbb1f18478b753
   m_configObjects: {}

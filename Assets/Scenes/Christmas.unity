@@ -246,7 +246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &927379726
 Transform:
   m_ObjectHideFlags: 0
@@ -427,7 +427,7 @@ MonoBehaviour:
   markerToListen: corgi
   child: {fileID: 927379725}
   updateSpeed: 10
-  positionThreshold: 0
+  positionThreshold: 0.1
   uiHelper: {fileID: 1837924603}
   gameUI: {fileID: 0}
 --- !u!4 &1473010738
@@ -703,11 +703,16 @@ PrefabInstance:
         type: 3}
       propertyPath: moveWithCustomTransform
       value: 
-      objectReference: {fileID: 1473010738}
+      objectReference: {fileID: 2077842374}
+    - target: {fileID: 881311355183206542, guid: 1dfd5c278dbc9ed4697787f96264f276,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 881311355414788382, guid: 1dfd5c278dbc9ed4697787f96264f276,
         type: 3}
       propertyPath: m_InitialState
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 881311356074584538, guid: 1dfd5c278dbc9ed4697787f96264f276,
         type: 3}
@@ -728,7 +733,22 @@ PrefabInstance:
         type: 3}
       propertyPath: moveWithCustomTransform
       value: 
-      objectReference: {fileID: 1473010738}
+      objectReference: {fileID: 2077842374}
+    - target: {fileID: 881311356074584538, guid: 1dfd5c278dbc9ed4697787f96264f276,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.minScalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 881311356074584538, guid: 1dfd5c278dbc9ed4697787f96264f276,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 881311356074584543, guid: 1dfd5c278dbc9ed4697787f96264f276,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 881311356203625026, guid: 1dfd5c278dbc9ed4697787f96264f276,
         type: 3}
       propertyPath: m_LocalPosition.x

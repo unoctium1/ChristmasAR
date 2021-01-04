@@ -8,28 +8,34 @@ public class StartOnMarkerDetected : MonoBehaviour
 {
     PlayableDirector dir;
 
-    bool isFirstTime = true;
+    bool isFirstTime;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
         dir = GetComponent<PlayableDirector>();
-
-        DetectionManager.onMarkerVisible += onMarkerVisible;
-        DetectionManager.onMarkerLost += onMarkerLost;
+        isFirstTime = true;
     }
 
-    void onMarkerVisible(MarkerInfo m)
+    void Start()
     {
+        
+
+        DetectionManager.onMarkerVisible += StartPlayable;
+        DetectionManager.onMarkerLost += StopPlayable;
+    }
+
+    void StartPlayable(MarkerInfo m)
+    {
+        /*
         if (isFirstTime)
         {
             dir.Play();
             isFirstTime = false;
         }
-        else if (dir.state == PlayState.Paused) dir.Resume();
+        else */if (dir.state == PlayState.Paused) dir.Resume();
     }
 
-    void onMarkerLost(MarkerInfo m)
+    void StopPlayable(MarkerInfo m)
     {
         if (dir.state == PlayState.Playing) dir.Pause();
     }

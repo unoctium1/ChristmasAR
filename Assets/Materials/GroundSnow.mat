@@ -83,7 +83,7 @@ Material:
     - _MaxTessDistance: 1
     - _Metallic: 0
     - _NoiseScale: 0.1
-    - _NoiseWeight: 0.22
+    - _NoiseWeight: 0.1
     - _OcclusionStrength: 1
     - _OrthographicCameraSize: 15
     - _QueueOffset: 0
@@ -92,8 +92,8 @@ Material:
     - _Scale: 1
     - _Smoothness: 0.5
     - _SmoothnessTextureChannel: 0
-    - _SnowDepth: 0.1
-    - _SnowHeight: 0.08
+    - _SnowDepth: 0.2
+    - _SnowHeight: 0.05
     - _SnowTextureOpacity: 0.3
     - _SnowTextureScale: 0.3
     - _SparkCutoff: 0.1
